@@ -6,6 +6,8 @@ module.exports = function(graph_api){
         data = req.body;
     // Make sure this is a page subscription
     if(data.object == 'page'){
+      parsedData = JSON.stringify(data);
+      console.log(parsedData);
       for(let pageEntry of data.entry){
         for(let messagingEvent of pageEntry.messaging){
           if(messagingEvent.message) msgs.push(messagingEvent);

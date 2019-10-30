@@ -1,0 +1,6 @@
+alias cdD="cd ~/Desktop"
+alias atom="open -a 'Atom'"
+alias gaA="git add -A"
+alias gco="git checkout"
+alias gp="git push"
+alias gcm="git commit -m"
